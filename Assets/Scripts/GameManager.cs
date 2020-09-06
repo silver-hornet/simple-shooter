@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject enemyPrefab;
+    [SerializeField] GameObject enemyPrefab; 
 
     void Start()
     {

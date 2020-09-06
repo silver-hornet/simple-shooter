@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class target : MonoBehaviour
 {
+    float xRange = 4;
+    float ySpawnPos = 1;
+    float zRange = 4;
 
     void OnEnable()
     {
+        transform.position = RandomSpawnPos();
         Die();
     }
 
@@ -18,5 +22,10 @@ public class target : MonoBehaviour
     void OnMouseDown()
     {
         Destroy(gameObject);
+    }
+
+    Vector3 RandomSpawnPos()
+    {
+        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos);
     }
 }
