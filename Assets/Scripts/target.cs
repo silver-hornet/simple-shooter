@@ -7,9 +7,11 @@ public class target : MonoBehaviour
     float xRange = 4;
     float ySpawnPos = 1;
     float zRange = 4;
+    GameManager gameManager;
 
     void OnEnable()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         transform.position = RandomSpawnPos();
         Die();
     }
@@ -21,7 +23,12 @@ public class target : MonoBehaviour
 
     void OnMouseDown()
     {
-        Destroy(gameObject);
+        if (gameManager.ammo > 0)
+        {
+            gameManager.ammo -= 1;
+            Destroy(gameObject);
+        }
+        
     }
 
     Vector3 RandomSpawnPos()

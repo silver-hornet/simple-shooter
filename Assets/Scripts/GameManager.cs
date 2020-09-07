@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject enemyPrefab; 
+    [SerializeField] GameObject enemyPrefab;
+    public float ammo = 2;
 
     void Start()
     {
-        InvokeRepeating("EnemySpawn", 2, 5);
+        InvokeRepeating("EnemySpawn", 1, 2);
     }
 
     void EnemySpawn()
