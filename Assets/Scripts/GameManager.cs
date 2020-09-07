@@ -8,11 +8,11 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Instantiate(enemyPrefab);
+        InvokeRepeating("EnemySpawn", 2, 5);
     }
 
-    void Update()
+    void EnemySpawn()
     {
-
+        Instantiate(enemyPrefab);
     }
 }
