@@ -386,7 +386,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 6800145058637791705, guid: e13af1c6a983141afbc97971bde55502,
     type: 3}
-  ammo: 2
+  ammoPrefab: {fileID: 1944091697799427918, guid: 4e303ef60660449ddb2a183f73d87c75,
+    type: 3}
+  ammo: 6
 --- !u!4 &635478765
 Transform:
   m_ObjectHideFlags: 0

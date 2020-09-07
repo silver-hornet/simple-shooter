@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class target : MonoBehaviour
+public class reload : MonoBehaviour
 {
     float xRange = 4;
     float ySpawnPos = 1;
@@ -23,11 +23,8 @@ public class target : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (gameManager.ammo > 0)
-        {
-            gameManager.ammo -= 1;
-            Destroy(gameObject);
-        } 
+        gameManager.ammo = 6;
+        Destroy(gameObject);
     }
 
     Vector3 RandomSpawnPos()
