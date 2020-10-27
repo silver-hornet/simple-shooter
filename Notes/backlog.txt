@@ -1,0 +1,16 @@
+###Completed
+Enemy
+Basic shooting (using OnMouseDown)
+Make enemy disappear when hit by bullet
+Enemy spawning
+Game Manager
+Position camera
+Enemy disappears after X seconds
+Number of bullets
+Reload
+Shoot powerup for extra ammo?
+Spawn powerups
+
+###To Do
+Enemies shoot back
+Crouch behind barrier
